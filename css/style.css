@@ -71,6 +71,7 @@ li {
 }
 /* hero */
 .hero {
+  background-image: url(/background/envelope\\(hover\).svg);
   background: rgba(47, 48, 58, 1);
   /* width: 800px; */
   /* height: 600px; */
