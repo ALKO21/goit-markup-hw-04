@@ -101,14 +101,51 @@ img {
 
 .header-link,
 .contacts {
+  outline: 2px solid tomato;
+
   padding: 32px 0;
-  display: block;
+  display: flex;
   text-decoration: none;
   font-weight: 500;
   color: inherit;
   letter-spacing: 0.02em;
   line-height: 1.14;
+  vertical-align: middle;
 }
+/* тест с иконкой  */
+.icon {
+  outline: 2px solid tomato;
+  margin-right: 10px;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  width: 16px;
+  height: 12px;
+  color: rgba(117, 117, 117, 1);
+}
+.header-list {
+  outline: 2px solid tomato;
+
+  display: flex;
+  align-items: center;
+}
+
+/* закончился тест с иконкой  */
+
+/* .contacts::before {
+  content: '';
+  width: 16px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mail::before {
+  background-image: url('../images/envelope.svg');
+}
+.phone::before {
+  background-image: url('../images/Vector.svg');
+} */
 
 .contacts {
   color: var(--color-gray);
@@ -118,6 +155,8 @@ img {
 .header-link:focus,
 .contacts:hover,
 .contacts:focus,
+.icon:hover,
+.icon:focus,
 .footer-phone:hover,
 .footer-phone:focus,
 .footer-adress:hover,
@@ -130,11 +169,23 @@ img {
 /* hero */
 
 .hero {
-  background: rgba(47, 48, 58, 1);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
+.overlay {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../background/Img-layout.jpg');
+}
+
 .hero-title {
   width: 696px;
   margin-bottom: 30px;
@@ -188,7 +239,32 @@ img {
   overflow: hidden;
 }
 
-.features-title2 {
+.feature-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(1)::before {
+  background-image: url('../images/antenna\ 1.svg');
+}
+.feature-item:nth-child(2)::before {
+  background-image: url('../images/clock\ 1.svg');
+}
+.feature-item:nth-child(3)::before {
+  background-image: url('../images/diagram\ 1.svg');
+}
+.feature-item:nth-child(4)::before {
+  background-image: url('../images/astronaut\ 1.svg');
+}
+
+.features-title2,
+.welcome {
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -277,6 +353,26 @@ img {
   padding-bottom: 30px;
 }
 
+/* companies */
+
+.companies-list {
+  display: flex;
+  outline: 2px dashed red;
+  /* justify-content: space-between; */
+}
+
+.company-item {
+  /* width: 170px; */
+  height: 92px;
+  text-align: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company-item:nth-child(-n + 5) {
+  margin-right: 30px;
+}
+
 /* footer */
 
 .footer {
@@ -284,6 +380,9 @@ img {
 }
 
 .footer .container {
+  display: flex;
+  outline: 2px dashed red;
+
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -313,6 +412,28 @@ img {
 
 .address-list:not(:last-child) {
   margin-bottom: 9px;
+}
+
+/* footer social networks */
+
+.welcome_social {
+  color: var(--color-white);
+  margin-left: 70px;
+  padding-top: 12px;
+  outline: 2px dashed red;
+}
+.welcome {
+  display: flex;
+  outline: 2px dashed red;
+}
+
+.welcome-list {
+  display: flex;
+  outline: 2px dashed red;
+}
+
+.welcome-items {
+  outline: 2px dashed red;
 }
 
 /* our_projects */

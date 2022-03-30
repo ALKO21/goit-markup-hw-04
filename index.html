@@ -38,10 +38,20 @@
             <!-- contacts -->
             <ul class="header-list-contact">
                 <li class="header-list">
-                    <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <svg class="icon">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    <a 
+                    class="contacts mail" 
+                    href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                     </a>
+                    
                 </li>
+                
+
                 <li class="header-list">
-                    <a class="contacts" href="tel:+380961111111"> +38 096 111 11 11</a>
+                    <a class="contacts phone" href="tel:+380961111111"> +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -49,8 +59,8 @@
     <!-- main_content -->
     <main>
         <!-- hero_section -->
-        <section class="hero">
-            <div class="container">
+        <section class="hero overlay">
+            <div class="container ">
                 <h1 class="hero-title ">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero-button" type="button">Заказать услугу</button>
             </div>
@@ -130,21 +140,57 @@
                 </ul>
             </div>
         </section>
+        <section class="section clients">
+            <div class="container">
+                <h2 class="team-title">Постоянные клиенты</h2>
+                <ul class="companies-list">
+                    <li class="company-item">
+                        <a class="company" href=""><img class="comp-img" src="./images/antenna 1.svg" alt=""></a>
+                    </li>
+                    <li class="company-item">
+                        <a class="company" href=""><img class="comp-img" src="./images/antenna 1.svg" alt=""></a>
+                    </li>
+                    <li class="company-item">
+                        <a class="company" href=""><img class="comp-img" src="./images/antenna 1.svg" alt=""></a>
+                    </li>
+                    <li class="company-item">
+                        <a class="company" href=""><img class="comp-img" src="./images/antenna 1.svg" alt=""></a>
+                    </li>
+                    <li class="company-item">
+                        <a class="company" href=""><img class="comp-img" src="./images/antenna 1.svg" alt=""></a>
+                    </li>
+                    <li class="company-item">
+                        <a class="company" href=""><img class="comp-img" src="./images/antenna 1.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!-- footer -->
     <footer class="footer">
-        <div class="container footer">
-            <a class="logo" href="./index.html"> Web<span class="footer-logo-accent">Studio</span></a>
-            <address class="footer-contacts">
-                <ul>
-                    <li class="address-list"><a class="footer-adress" href="https://goo.gl/maps/ktapFahStS3y24yC7">г.
-                            Киев, пр-т Леси Украинки, 26</a>
-                    <li class="address-list"><a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li class="address-list"><a class="footer-phone" href="tel:+380991111111"> +38 099 111 11 11</a>
-                    </li>
+        <div class="container footer logo-welcome">
+            <div class="logo-contacts">
+                <a class="logo" href="./index.html"> Web<span class="footer-logo-accent">Studio</span></a>
+                <address class="footer-contacts">
+                    <ul>
+                        <li class="address-list"><a class="footer-adress" href="https://goo.gl/maps/ktapFahStS3y24yC7">г.
+                                Киев, пр-т Леси Украинки, 26</a>
+                        <li class="address-list"><a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address-list"><a class="footer-phone" href="tel:+380991111111"> +38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="welcome_social">
+                <h3 class="welcome">присоединяйтесь</h3>
+                <ul class="welcome-list">
+                    <li class="welcome-items">insta</li>
+                    <li class="welcome-items">twiter</li>
+                    <li class="welcome-items">FB</li>
+                    <li class="welcome-items">Ln</li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>
