@@ -328,28 +328,34 @@ img {
 
 /* companies */
 
-.companies-list {
+.clients {
   display: flex;
+}
+.companies-list {
+  outline: 2px dashed rgb(0, 47, 255);
   height: 92px;
-  outline: 2px dashed red;
+  padding: 16px 32px;
   justify-content: space-between;
 }
 
 .company-item {
-  /* width: 170px; */
-  /* padding: 16px 32px; */
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   outline: 2px dashed red;
 }
-.company-block {
-  outline: 2px dashed red;
-}
 
 .company {
-  fill: #afb1b8;
+  outline: 2px dashed rgb(0, 255, 21);
+}
+
+.svg-company {
+  width: 102px;
+  height: 60px;
+  background: red;
+}
+
+.svg-icon {
 }
 
 /* footer */
@@ -396,23 +402,40 @@ img {
 /* footer social networks */
 
 .welcome_social {
+  display: block;
   color: var(--color-white);
   margin-left: 70px;
   padding-top: 12px;
   outline: 2px dashed red;
 }
-.welcome {
-  display: flex;
-  outline: 2px dashed red;
-}
 
 .welcome-list {
   display: flex;
-  outline: 2px dashed red;
+
+  /* outline: 2px dashed red; */
 }
 
 .welcome-items {
-  outline: 2px dashed red;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.welcome-items:nth-child(-n + 3) {
+  margin-right: 30px;
+}
+
+.welcome-items:hover {
+  background-color: #2196f3;
+}
+
+.sn-icons {
+  width: 20px;
+  height: 20px;
+
+  fill: rgba(255, 255, 255, 1);
+  /* padding: 12px; */
 }
 
 /* our_projects */
