@@ -237,7 +237,7 @@ img {
 }
 
 .features-title2,
-.welcome {
+.welcome-tittle {
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -326,51 +326,53 @@ img {
   padding-bottom: 30px;
 }
 
-/* companies */
+/* clients */
 
-.clients {
+.client-list {
   display: flex;
-}
-.companies-list {
-  outline: 2px dashed rgb(0, 47, 255);
-  height: 92px;
-  padding: 16px 32px;
   justify-content: space-between;
 }
 
-.company-item {
-  border: 1px solid #afb1b8;
+.client-item {
+  border-color: red;
+}
+
+.client-link {
+  fill: #afb1b8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--color-logo);
+}
+
+.client-icon {
+  width: 170px;
+  height: 92px;
+  border: #afb1b8 1px solid;
+  padding: 16px 32px;
   border-radius: 4px;
-
-  outline: 2px dashed red;
 }
 
-.company {
-  outline: 2px dashed rgb(0, 255, 21);
+.client-icon:hover,
+.client-icon:focus {
+  border: var(--color-logo) 1px solid;
 }
-
-.svg-company {
+.client {
   width: 102px;
   height: 60px;
-  background: red;
-}
-
-.svg-icon {
 }
 
 /* footer */
 
 .footer {
   background-color: #2f303a;
+  padding-top: 72px;
+  padding-bottom: 100px;
 }
 
 .footer .container {
   display: flex;
-  outline: 2px dashed red;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   line-height: 1.7;
   font-style: normal;
 }
@@ -401,41 +403,35 @@ img {
 
 /* footer social networks */
 
-.welcome_social {
+.welcome-container {
   display: block;
   color: var(--color-white);
   margin-left: 70px;
-  padding-top: 12px;
-  outline: 2px dashed red;
+  /* padding-top: 12px; */
 }
 
 .welcome-list {
   display: flex;
-
-  /* outline: 2px dashed red; */
+  align-items: center;
+  justify-content: center;
 }
-
-.welcome-items {
-  width: 44px;
-  height: 44px;
+.sn-list {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
-.welcome-items:nth-child(-n + 3) {
+.sn-list:hover {
+  background-color: #2196f3;
+}
+.sn-list:nth-child(-n + 3) {
   margin-right: 30px;
 }
 
-.welcome-items:hover {
-  background-color: #2196f3;
-}
-
-.sn-icons {
-  width: 20px;
-  height: 20px;
-
+.sn-items {
   fill: rgba(255, 255, 255, 1);
-  /* padding: 12px; */
 }
 
 /* our_projects */
