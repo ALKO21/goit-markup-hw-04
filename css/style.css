@@ -6,7 +6,7 @@
 }
 
 :root {
-  --color-logo: #2196f3;
+  --color-accent: #2196f3;
   --color-gray: #757575;
   --color-black: #212121;
   --color-white: #ffffff;
@@ -78,7 +78,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--color-logo);
+  color: var(--color-accent);
 }
 
 .header-logo-accent {
@@ -130,11 +130,13 @@ img {
   fill: rgba(117, 117, 117, 1);
 }
 
-.mail-section:hover {
-  color: var(--color-logo);
+.mail-section:hover,
+.mail-section:focus {
+  color: var(--color-accent);
 }
-.icon:hover {
-  fill: var(--color-logo);
+.icon:hover,
+.icon:focus {
+  fill: var(--color-accent);
 }
 
 /* все ховеры  */
@@ -147,7 +149,7 @@ img {
 .footer-adress:focus,
 .footer-mail:hover,
 .footer-mail:focus {
-  color: var(--color-logo);
+  color: var(--color-accent);
 }
 
 /* hero */
@@ -193,7 +195,7 @@ img {
   border: none;
   width: 200px;
   height: 50px;
-  background-color: var(--color-logo);
+  background-color: var(--color-accent);
   color: var(--color-white);
   font-weight: 700;
   font-size: 16px;
@@ -344,15 +346,19 @@ img {
   width: 44px;
   height: 44px;
   padding: 12px;
-}
-.photo-member-list:hover {
-  background-color: #2196f3;
+  cursor: pointer;
 }
 .sn-member-icon {
   fill: #afb1b8;
 }
 
-.sn-member-icon:hover {
+.photo-member-list:hover,
+.photo-member-list:focus {
+  background-color: var(--color-accent);
+}
+
+.sn-member-icon:hover,
+.sn-member-icon:focus {
   fill: var(--color-white);
 }
 
@@ -373,7 +379,7 @@ img {
 
 .client-link:hover,
 .client-link:focus {
-  fill: var(--color-logo);
+  fill: var(--color-accent);
 }
 
 .client-icon {
@@ -386,7 +392,7 @@ img {
 
 .client-icon:hover,
 .client-icon:focus {
-  border: var(--color-logo) 1px solid;
+  border: var(--color-accent) 1px solid;
 }
 .client {
   width: 102px;
@@ -454,10 +460,12 @@ img {
   width: 44px;
   height: 44px;
   padding: 12px;
+  cursor: pointer;
 }
 
-.sn-list:hover {
-  background-color: #2196f3;
+.sn-list:hover,
+.sn-list:focus {
+  background-color: var(--color-accent);
 }
 .sn-list:nth-child(-n + 3) {
   margin-right: 30px;
@@ -497,7 +505,7 @@ img {
 .project-button:hover,
 .project-button:focus {
   color: var(--color-white);
-  background-color: var(--color-logo);
+  background-color: var(--color-accent);
 }
 
 /* project pictures */
