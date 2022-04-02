@@ -100,8 +100,6 @@ img {
 }
 .header-link,
 .contacts {
-  /* outline: 2px solid tomato; */
-
   padding: 32px 0;
   display: flex;
   text-decoration: none;
@@ -120,23 +118,17 @@ img {
 
 .contacts {
   color: var(--color-gray);
-  align-items: center;
-  /* display: block; */
+  fill: rgba(117, 117, 117, 1);
 }
 .icon {
   margin-right: 10px;
   border: 0;
   list-style: none;
-  fill: rgba(117, 117, 117, 1);
 }
 
-.mail-section:hover,
-.mail-section:focus {
-  color: var(--color-accent);
-}
-.icon:hover,
-.icon:focus {
+.contacts:hover {
   fill: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* все ховеры  */
@@ -363,10 +355,6 @@ img {
 .client-list {
   display: flex;
   justify-content: space-between;
-}
-
-.client-item {
-  /* border-color: red; */
 }
 
 .client-link {
