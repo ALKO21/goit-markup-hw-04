@@ -113,25 +113,34 @@ img {
 }
 
 /* иконки в хедере   */
+
+.mail-section {
+  display: block;
+}
+
 .contacts {
   color: var(--color-gray);
   align-items: center;
-  display: block;
+  /* display: block; */
 }
 .icon {
-  /* outline: 1px solid tomato; */
   margin-right: 10px;
   border: 0;
   list-style: none;
   fill: rgba(117, 117, 117, 1);
 }
 
+.mail-section:hover {
+  color: var(--color-logo);
+}
+.icon:hover {
+  fill: var(--color-logo);
+}
+
 /* все ховеры  */
 
 .header-link:hover,
 .header-link:focus,
-.contacts:hover,
-.contacts:focus,
 .footer-phone:hover,
 .footer-phone:focus,
 .footer-adress:hover,
@@ -139,11 +148,6 @@ img {
 .footer-mail:hover,
 .footer-mail:focus {
   color: var(--color-logo);
-}
-
-.contacts :hover,
-.contacts :focus {
-  fill: var(--color-logo);
 }
 
 /* hero */
@@ -314,7 +318,7 @@ img {
 }
 .team-text {
   text-align: center;
-
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -326,6 +330,32 @@ img {
   padding-bottom: 30px;
 }
 
+/* Social Networks */
+
+.photo-member-section {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.photo-member-list {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+.photo-member-list:hover {
+  background-color: #2196f3;
+}
+.sn-member-icon {
+  fill: #afb1b8;
+}
+
+.sn-member-icon:hover {
+  fill: var(--color-white);
+}
+
 /* clients */
 
 .client-list {
@@ -334,7 +364,7 @@ img {
 }
 
 .client-item {
-  border-color: red;
+  /* border-color: red; */
 }
 
 .client-link {
@@ -407,7 +437,10 @@ img {
   display: block;
   color: var(--color-white);
   margin-left: 70px;
-  /* padding-top: 12px; */
+  padding-top: 12px;
+}
+.welcome-tittle {
+  margin-bottom: 20px;
 }
 
 .welcome-list {
