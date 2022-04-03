@@ -323,36 +323,32 @@ img {
 /* Social Networks */
 
 .photo-member-section {
-  /* display: flex;
-  justify-content: space-between; */
-  /* margin-left: 32px;
-  margin-right: 32px; */
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .photo-member-list {
   width: 44px;
   height: 44px;
-
-.member-network-link{
-  
 }
 
-
-.member-sn-link {
-  width: 100%;
-  height: 100%;
+.member-network-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  brad
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .sn-member-icon {
-  fill: #afb1b8;
+  fill: var(--color-gray);
 }
 
-.member-sn-link:hover,
-.member-sn-link:focus {
+.member-network-link:hover,
+.member-network-link:focus {
   background-color: var(--color-accent);
   fill: var(--color-white);
 }
