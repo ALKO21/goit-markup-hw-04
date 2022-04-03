@@ -112,11 +112,9 @@ img {
 
 /* иконки в хедере   */
 
-.mail-section {
-  display: block;
-}
-
 .contacts {
+  display: flex;
+  align-items: center;
   color: var(--color-gray);
   fill: rgba(117, 117, 117, 1);
 }
@@ -126,7 +124,8 @@ img {
   list-style: none;
 }
 
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
   fill: var(--color-accent);
   color: var(--color-accent);
 }
@@ -218,11 +217,12 @@ img {
 }
 
 .pic-block {
+  display: flex;
+  justify-content: center;
   background: #f5f4fa;
   height: 120px;
   border-radius: 4px;
   align-items: center;
-  padding: 25px 100px;
   margin-bottom: 30px;
 }
 .svg_features {
@@ -323,30 +323,37 @@ img {
 /* Social Networks */
 
 .photo-member-section {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 32px;
-  margin-right: 32px;
+  /* display: flex;
+  justify-content: space-between; */
+  /* margin-left: 32px;
+  margin-right: 32px; */
 }
+
 .photo-member-list {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
   width: 44px;
   height: 44px;
-  padding: 12px;
-  cursor: pointer;
+
+.member-network-link{
+  
 }
+
+
+.member-sn-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  brad
+}
+
 .sn-member-icon {
   fill: #afb1b8;
 }
 
-.photo-member-list:hover,
-.photo-member-list:focus {
+.member-sn-link:hover,
+.member-sn-link:focus {
   background-color: var(--color-accent);
-}
-
-.sn-member-icon:hover,
-.sn-member-icon:focus {
   fill: var(--color-white);
 }
 
